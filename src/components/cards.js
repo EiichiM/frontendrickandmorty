@@ -35,7 +35,7 @@ export class CContainer extends Component {
         console.log(this.state.episodios)
         if(this.state.episodios.length !== 0){
             
-            return this.state.episodios.map(episiodio => {
+            return this.state.episodios[0].map(episiodio => {
                 return <Card name={episiodio.name} air_date={episiodio.air_date} key={episiodio.id} />
             })
         }
