@@ -69,7 +69,7 @@ export class cards extends Component {
           >
 
             <h4>STATUS  {this.props.air_date}</h4>
-            <h4>SPECIES{this.props}</h4>
+            <h4>SPECIES </h4>
             <h4>ABOUT<a href="">See more</a></h4>
             <h4>EPISODES <button>Play</button></h4>
           </div>

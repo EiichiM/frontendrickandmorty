@@ -2,7 +2,7 @@ body{
     font-family: 'Helvetica Neue LT Std'!important;
     font-weight: normal !important;
     font-style: normal !important;
-    background-image: image("../img/fondo.svg");
+    
 }
 
 .container{
@@ -11,7 +11,7 @@ body{
     flex-wrap:wrap;
     width:85vw;
     margin-left:15vw;
-    
+    background-image: image("../img/fondo.svg");
 }
 
 .style{

@@ -14,6 +14,7 @@ export class CContainer extends Component {
     componentDidMount() {
         axios.get("https://backendrm.herokuapp.com/all")
             .then(res => {
+                console.log(res.data)
                 this.setState({
                    episodios: res.data
                 })
@@ -32,7 +33,7 @@ export class CContainer extends Component {
 
     renderEpisodios() {
 
-        return this.state.episodios.map(episiodio => {
+        return this.state.episodios[0].map(episiodio => {
             return <Card name={episiodio.name} air_date={episiodio.air_date} key={episiodio.id} />
         })
     }
