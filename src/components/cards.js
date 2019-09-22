@@ -4,7 +4,6 @@ import axios from 'axios'
 import { getCharacter, getLocation, getEpisode } from 'rickmortyapi'
 import { ESPIPE } from 'constants'
 
-console.log(getCharacter(), getLocation(), getEpisode())
 export class CContainer extends Component {
 
     state = {
@@ -14,7 +13,7 @@ export class CContainer extends Component {
     componentDidMount() {
         axios.get("https://backendrm.herokuapp.com/all")
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 this.setState({
                    episodios: res.data
                 })
@@ -33,9 +32,14 @@ export class CContainer extends Component {
 
     renderEpisodios() {
 
-        return this.state.episodios[0].map(episiodio => {
-            return <Card name={episiodio.name} air_date={episiodio.air_date} key={episiodio.id} />
-        })
+        console.log(this.state.episodios)
+        if(this.state.episodios.length !== 0){
+            
+            return this.state.episodios.map(episiodio => {
+                return <Card name={episiodio.name} air_date={episiodio.air_date} key={episiodio.id} />
+            })
+        }
+
     }
 
 
