@@ -37,7 +37,7 @@ export class cards extends Component {
 
   render() {
     return (
-      <div className='card mt-3' style={{ height: this.state.cardHeight, width: "200px" }}>
+      <div className='card mt-3' style={{ height: this.state.cardHeight, width: "250px" }}>
         <div className='card-container'>
           <div
             className='card-front'
@@ -55,7 +55,7 @@ export class cards extends Component {
             <div class="d-flex align-items-center">
             <h5>{this.props.name}</h5>
             </div>
-            <h6>{[this.props.id , this.props.air_date]}</h6>
+            <h6>{[this.props.id , this.props.created ]}</h6>
             <button
               className='button'
               onClick={this.showInfo}
@@ -68,7 +68,7 @@ export class cards extends Component {
             className='box-info'
             style={{
               top: this.state.infoPosition,
-              width: "200px",
+              width: "250px",
             }}>
             <div class="d-flex justify-content-around">
               <div class="d-flex align-items-center">
