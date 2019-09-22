@@ -1,3 +1,4 @@
+
 .card{
     width:300px;
     border-radius:13px !important;
@@ -31,11 +32,19 @@
     }
   
     .button{
-      border:0;
-      border-radius:5px;
-      width:100px;
-      height:30px;
-      background-color:chartreuse;
+        border:0;
+        border-radius:5px;
+        width:100px;
+        height:30px;
+        background-color:chartreuse;
+    }
+    .boton{
+        border:0;
+        border-radius:5px;
+        widows: 50px;
+        height:20px;
+        background-color:chartreuse;
+
     }
   
     .box-info{
@@ -47,11 +56,22 @@
       z-index: -2;
       border-radius:13px;
       transition-duration: 1s;
-      padding-top:200px;
+      padding-top:170px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      
     }
+    .box-info > h6{
+        
+        font-family: 'Helvetica Neue LT Std'!important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        
+        /* justify-content: center; */
+    }
+  .prop{
+      color: orange;
+  }
   
     .cards{
         width: 80vw;

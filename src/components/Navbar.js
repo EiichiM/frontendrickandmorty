@@ -15,17 +15,17 @@ export default class Example extends React.Component {
                         <div className="collapse navbar-collapse nav-options-container" id="navbarSupportedContent">
                             <ul className="navbar-nav" style={{ color: '#000000' }}>
 
-                                <li className="nav-item">
-                                    <p className="nav-link" >HOME</p>
-                                </li>
+                                <div className="nav-item">
+                                    <li className="nav-link" >HOME</li>
+                                </div>
 
-                                <li className="nav-item">
-                                    <p className="nav-link" >ABOUT</p>
-                                </li>
+                                <div className="nav-item">
+                                    <li className="nav-link" >ABOUT</li>
+                                </div>
 
-                                <li className="nav-item">
-                                    <p className="nav-link" >COLLECTIONS</p>
-                                </li>
+                                <div className="nav-item">
+                                    <li className="nav-link" >COLLECTIONS</li>
+                                </div>
 
                             </ul>
                         </div>
