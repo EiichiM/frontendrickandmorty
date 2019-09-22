@@ -1,0 +1,42 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 410px;
+}
+.titulos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.h2{
+    display: flex;
+    width: 120%;
+    margin-left: -100px;
+    background-color: aqua;
+    justify-content: center;
+    
+}
+
+.h2 > h2{
+    margin-top: -20px;
+}
+
+h1{
+    display: flex;
+    font-family: 'Helvetica Neue LT Std'!important;
+    justify-content: center;
+    margin-left: -300px;
+    padding-bottom: 20px;
+}
+.ram{
+    padding: -100px;
+}
+.morty{
+    display: flex;
+    align-items: flex-end;
+}
+.rick{
+    display: flex;
+
+}

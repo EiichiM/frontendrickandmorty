@@ -1,0 +1,23 @@
+body{
+    font-family: 'Helvetica Neue LT Std'!important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+.navbar{
+    /* font-family: 'Nanum Myeongjo', serif;
+    font-size: 22px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+}
+
+.nav-options-container{
+    display: flex !important;
+    /* justify-content: flex-end */
+}
+
+.nav{
+    color: black;
+}
