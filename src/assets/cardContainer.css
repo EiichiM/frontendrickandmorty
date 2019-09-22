@@ -11,7 +11,6 @@ body{
     flex-wrap:wrap;
     width:85vw;
     margin-left:15vw;
-    background-image: image("../img/fondo.svg");
 }
 
 .style{

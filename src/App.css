@@ -31,11 +31,13 @@
       transform: rotate(360deg);
     }
   }
-  
+  /* .back{
+    background-image: url("../img/fondo.svg") !important;
+  } */
   
   .filtros-container{
     display: flex;
-    background-image: image("../img/fondo.svg") !important;
+    background-image: url("../src/img/fondo.svg") !important;
   }
   /* .container{
     background-image: image("../img/fondo.svg");

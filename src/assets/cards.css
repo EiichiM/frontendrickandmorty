@@ -40,15 +40,17 @@
   
     .box-info{
       background-color: #000;
-      height: 500px;
+      color: white;
+      height: 300px;
       width:300px;
       position:absolute;
       z-index: -2;
       border-radius:13px;
       transition-duration: 1s;
-      padding:200px;
+      padding-top:200px;
       display: flex;
-      justify-content: end;
+      flex-direction: column;
+      justify-content: center;
     }
   
     .cards{

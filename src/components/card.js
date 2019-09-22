@@ -21,16 +21,16 @@ export class cards extends Component {
   }
 
   showInfo = () => {
-    console.log('perro')
+    console.log('prueba')
     if (this.state.infoPosition === '-300%') {
       this.setState({
         infoPosition: '0%',
-        cardHeight: '500px'
+        cardHeight: '300px'
       })
     } else {
       this.setState({
-        infoPosition: '-300%',
-        cardHeight: '200px'
+        infoPosition: '-200%',
+        cardHeight: '150px'
       })
     }
   }
@@ -59,6 +59,7 @@ export class cards extends Component {
               onClick={this.showInfo}
             >
              See more
+
                 </button>
           </div>
           <div
@@ -68,10 +69,12 @@ export class cards extends Component {
             }}
           >
 
-            <h4>STATUS  {this.props.air_date}</h4>
-            <h4>SPECIES </h4>
-            <h4>ABOUT<a href="">See more</a></h4>
-            <h4>EPISODES <button>Play</button></h4>
+            <h6>STATUS  {this.props.status}</h6>
+            <h6>SPECIES {this.props.specie} </h6>
+            <h6>ABOUT<a href="">See more</a></h6>
+            <h6>EPISODES <button
+            onClick= {this.showInfo}
+            >Play</button></h6>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export class CContainer extends Component {
             .then(res => {
                 // console.log(res.data)
                 this.setState({
-                   episodios: res.data
+                    episodios: res.data
                 })
 
             });
@@ -33,10 +33,17 @@ export class CContainer extends Component {
     renderEpisodios() {
 
         console.log(this.state.episodios)
-        if(this.state.episodios.length !== 0){
-            
-            return this.state.episodios[0].map(episiodio => {
-                return <Card name={episiodio.name} air_date={episiodio.air_date} key={episiodio.id} />
+        if (this.state.episodios.length !== 0) {
+
+            return this.state.episodios[0].map((episodios, index) => {
+                return <Card
+                    name={episodios.name}
+                    created={episodios.created}
+                    key={episodios.id}
+                    image={this.state.episodios[1][index].image}
+                    status={this.state.episodios[1][index].status}
+                    specie={this.state.episodios[1][index].species}
+                />
             })
         }
 

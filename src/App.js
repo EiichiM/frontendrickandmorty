@@ -10,7 +10,7 @@ import Hero from "./components/Hero"
 
 function App() {
   return (
-    <div>
+    <div className= "back">
       <Navbar />
       <Hero />
       <div className='filtros-container'>
