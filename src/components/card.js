@@ -43,8 +43,7 @@ export class cards extends Component {
             className='card-front'
             style={{
               backgroundImage: `url(${this.props.image})`,
-              zIndex: this.state.cardPosition
-            }}
+              zIndex: this.state.cardPosition}}
             onClick={this.changePosition}
           >
           </div>
@@ -52,15 +51,15 @@ export class cards extends Component {
             className='card-back d-flex justify-content-center align-items-center'
             onClick={this.changePosition}
           >
-            <div class="d-flex align-items-center">
+            <div className="d-flex align-items-center">
               <h5>{this.props.name}</h5>
             </div>
-            <div class="d-flex justify-content-around">
-              <div>
-                <h6>ID:{this.props.id} </h6>
+            <div className="fechaid d-flex justify-content-between">
+              <div className="d-flex">
+                <h6>ID: {this.props.id} </h6>
               </div>
-              <div>
-                <h6>{this.props.air_date}</h6>
+              <div className="d-flex">
+                <h6> {this.props.air_date}</h6>
               </div>
             </div>
             <button
@@ -77,38 +76,38 @@ export class cards extends Component {
               top: this.state.infoPosition,
               width: "250px",
             }}>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex align-items-center">
+            <div className="d-flex justify-content-around">
+              <div className="d-flex align-items-center">
                 <h6>STATUS</h6>
               </div>
-              <div class="d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 <h6 className="prop">{this.props.status}</h6>
               </div>
             </div>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex align-items-center">
+            <div className="d-flex justify-content-around">
+              <div className="d-flex align-items-center">
                 <h6>SPECIES </h6>
               </div>
-              <div class="d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 <h6 className="prop"> {this.props.specie} </h6>
               </div>
             </div>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex align-items-center">
+            <div className="d-flex justify-content-around">
+              <div className="d-flex align-items-center">
                 <h6>ABOUT </h6>
               </div>
-              <div class="d-flex align-items-center">
-                <h6 className="prop"><a href="">See more</a></h6>
+              <div className="d-flex align-items-center">
+                <h6 className="prop"><a className="a"href="">See more</a></h6>
               </div>
             </div>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex align-items-center">
+            <div className="d-flex justify-content-around">
+              <div className="d-flex align-items-center">
                 <h6>EPISODES </h6>
               </div>
-              <div class="d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 <h6><button
-                  className="boton"
-                  onClick=""
+                  className="button"
+                  
                 >Play</button></h6>
               </div>
             </div>

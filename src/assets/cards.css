@@ -17,8 +17,8 @@
     border-radius:13px;
     background-size: cover;
   }
-  .a{
-      color: orange
+  a{
+      color: orange !important;
   }
   
   .card-back{
@@ -33,7 +33,10 @@
     color:white;
     border-radius:13px;
     }
-  
+button:hover{
+    color: #000;
+    background-color: darkgray;
+}
     .button{
         border:0;
         border-radius:5px;
@@ -41,13 +44,18 @@
         height:30px;
         background-color:chartreuse;
     }
+
     .boton{
         border:0;
         border-radius:5px;
-        widows: 50px;
-        height:20px;
+        widows: 120px;
+        height:25px;
         background-color:chartreuse;
 
+    }
+    .fechaid{
+        display: flex;
+        justify-content: space-around;
     }
   
     .box-info{
