@@ -44,7 +44,7 @@ export class CContainer extends Component {
                 }
                 return <Card
                     name={episodios.name}
-                    created={fecha}
+                    created={fecha()}
                     id={episodios.id}
                     image={this.state.episodios[1][index].image}
                     status={this.state.episodios[1][index].status}
