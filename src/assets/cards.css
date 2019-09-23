@@ -17,6 +17,9 @@
     border-radius:13px;
     background-size: cover;
   }
+  .a{
+      color: orange
+  }
   
   .card-back{
     height:150px;

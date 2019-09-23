@@ -36,14 +36,15 @@ export class CContainer extends Component {
         if (this.state.episodios.length !== 0) {
 
             return this.state.episodios[0].map((episodios, index) => {
-                const created = () => {
+                
+                function fecha() {
                     const date = episodios.air_date
                     const newdate = new Date(date)
                     return newdate
                 }
                 return <Card
                     name={episodios.name}
-                    created={created}
+                    created={fecha}
                     id={episodios.id}
                     image={this.state.episodios[1][index].image}
                     status={this.state.episodios[1][index].status}

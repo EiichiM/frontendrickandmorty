@@ -55,7 +55,8 @@ export class cards extends Component {
             <div class="d-flex align-items-center">
             <h5>{this.props.name}</h5>
             </div>
-            <h6>{[this.props.id , this.props.created ]}</h6>
+            <h6>{this.props.id }</h6>
+            <h6>{this.props.fecha}</h6>
             <button
               className='button'
               onClick={this.showInfo}
