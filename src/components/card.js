@@ -7,8 +7,8 @@ export class cards extends Component {
 
   state = {
     cardPosition: 1,
-    infoPosition: '-300%',
-    cardHeight: '200px'
+    infoPosition: '-100%',
+    cardHeight: '150px'
   }
 
   changePosition = () => {
@@ -53,11 +53,15 @@ export class cards extends Component {
             onClick={this.changePosition}
           >
             <div class="d-flex align-items-center">
-            <h5>{this.props.name}</h5>
+              <h5>{this.props.name}</h5>
             </div>
-            <div>
-            <h6>{this.props.id }</h6>
-            <h6>{this.props.fecha}</h6>
+            <div class="d-flex justify-content-around">
+              <div>
+                <h6>ID:{this.props.id} </h6>
+              </div>
+              <div>
+                <h6>{this.props.air_date}</h6>
+              </div>
             </div>
             <button
               className='button'

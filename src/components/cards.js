@@ -40,11 +40,13 @@ export class CContainer extends Component {
                 function fecha() {
                     const date = episodios.air_date
                     const newdate = new Date(date)
-                    return newdate
+                    const datetwo = Date.parse(newdate)
+                    return datetwo
                 }
+                console.log(fecha())
                 return <Card
                     name={episodios.name}
-                    created={fecha()}
+                    air_date={ episodios.air_date}
                     id={episodios.id}
                     image={this.state.episodios[1][index].image}
                     status={this.state.episodios[1][index].status}
