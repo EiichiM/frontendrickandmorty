@@ -1,10 +1,29 @@
 import React, { Component } from 'react'
 import '../assets/cards.css'
 import "./cards"
+import onClickOutside from "react-onclickoutside";
+class MyComponent extends Component {
+  handleClickOutside() {
+    console.log('prueba 2')
+    if (this.state.infoPosition === '-100%') {
+      this.setState({
+        infoPosition: '0%',
+        cardHeight: '400px'
+      })
+    } else {
+      this.setState({
+        infoPosition: '-100%',
+        cardHeight: '150px'
+      })
+    }
+    
+  }
+}
 
+const outside = onClickOutside(MyComponent);
 
 export class cards extends Component {
-
+ 
   state = {
     cardPosition: 3,
     infoPosition: '-100%',
@@ -64,19 +83,22 @@ export class cards extends Component {
             </div>
             <button
               className='boton'
-              onClick={this.showInfo}>
+              onClick={this.showInfo} 
+              >
                 
             See more
                 
                 </button>
           </div>
+         
           <div
             className='box-info'
             style={{
               top: this.state.infoPosition,
               width: "250px",
               height: "400px",
-            }}>
+            }}
+            >
             <div className="box-info-papa">
               <div className="box-info-hijoO">
                 <h6>STATUS</h6>
