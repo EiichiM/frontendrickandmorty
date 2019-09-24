@@ -6,17 +6,17 @@ import "./cards"
 export class cards extends Component {
 
   state = {
-    cardPosition: 1,
+    cardPosition: 3,
     infoPosition: '-100%',
     cardHeight: '150px'
   }
 
   changePosition = () => {
     console.log(this.state.cardPosition)
-    if (this.state.cardPosition === 1) {
-      this.setState({ cardPosition: -1 })
+    if (this.state.cardPosition === 3) {
+      this.setState({ cardPosition: 2 })
     } else {
-      this.setState({ cardPosition: 1 })
+      this.setState({ cardPosition: 3 })
     }
   }
 
@@ -25,7 +25,7 @@ export class cards extends Component {
     if (this.state.infoPosition === '-100%') {
       this.setState({
         infoPosition: '0%',
-        cardHeight: '300px'
+        cardHeight: '400px'
       })
     } else {
       this.setState({
@@ -63,11 +63,11 @@ export class cards extends Component {
               </div>
             </div>
             <button
-              className='button'
-              onClick={this.showInfo}
-            >
-              See more
-
+              className='boton'
+              onClick={this.showInfo}>
+                
+            See more
+                
                 </button>
           </div>
           <div
@@ -75,40 +75,49 @@ export class cards extends Component {
             style={{
               top: this.state.infoPosition,
               width: "250px",
+              height: "400px",
             }}>
-            <div className="d-flex justify-content-around">
-              <div className="d-flex align-items-center">
+            <div className="box-info-papa">
+              <div className="box-info-hijoO">
                 <h6>STATUS</h6>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="box-info-hijo">
                 <h6 className="prop">{this.props.status}</h6>
               </div>
             </div>
-            <div className="d-flex justify-content-around">
-              <div className="d-flex align-items-center">
+            <div className="box-info-papa">
+              <div className="box-info-hijoO">
                 <h6>SPECIES </h6>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="box-info-hijo">
                 <h6 className="prop"> {this.props.specie} </h6>
               </div>
             </div>
-            <div className="d-flex justify-content-around">
-              <div className="d-flex align-items-center">
+            <div className="box-info-papa">
+              <div className="box-info-hijoO">
                 <h6>ABOUT </h6>
               </div>
-              <div className="d-flex align-items-center">
-                <h6 className="prop"><a className="a"href="">See more</a></h6>
+              <div className="box-info-hijo">
+                <h6 className="prop"><a className="a"href="https://www.rickandmorty.com/">See more</a></h6>
               </div>
             </div>
-            <div className="d-flex justify-content-around">
-              <div className="d-flex align-items-center">
+            <div className="box-info-papa">
+              <div className="box-info-hijoO">
                 <h6>EPISODES </h6>
               </div>
-              <div className="d-flex align-items-center">
-                <h6><button
-                  className="button"
-                  
-                >Play</button></h6>
+              <div className="box-info-hijo">
+                <h6>
+                  <form action="https://www.rickandmorty.com/">
+                  <button
+                  className="button" type="submit">
+                    <span> 
+                    <b>
+                    Play
+                    </b>
+                    </span>
+                </button>
+                </form>
+                </h6>
               </div>
             </div>
 

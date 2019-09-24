@@ -12,10 +12,10 @@ export default class Example extends React.Component {
                 </div>
                 <div className="titulos">
                     <div className="ram">
-                        <h1>THE RICK AND MORTY</h1>
+                        <h1> <b>THE RICK AND MORTY </b></h1>
                     </div>
                     <div className="h2">
-                        <h2>HEY, DID YOU EVER WANT TO HOLD A TERRY FOLD</h2>
+                        <h2><b>HEY, DID YOU EVER WANT TO HOLD A TERRY FOLD?</b></h2>
                     </div>
                 </div>
                 <div className="morty">

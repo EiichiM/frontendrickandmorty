@@ -1,7 +1,8 @@
 
 .card{
+  font-family: 'Helvetica Neue LT Std';
     width:300px;
-    border-radius:13px !important;
+    border-radius:25px !important;
     transition-duration: 1s;
     background-color:transparent !important;
     overflow: hidden;
@@ -16,6 +17,7 @@
     width:250px;
     border-radius:13px;
     background-size: cover;
+    z-index: 3;
   }
   a{
       color: orange !important;
@@ -32,54 +34,56 @@
     flex-direction: column;
     color:white;
     border-radius:13px;
+    z-index: 2;
     }
-button:hover{
-    color: #000;
-    background-color: darkgray;
+.boton{
+  border:0;
+  border-radius:5px;
+  width:100px;
+  height:30px;
+  background-color:chartreuse;
 }
-    .button{
-        border:0;
-        border-radius:5px;
-        width:100px;
-        height:30px;
-        background-color:chartreuse;
-    }
-
-    .boton{
-        border:0;
-        border-radius:5px;
-        widows: 120px;
-        height:25px;
-        background-color:chartreuse;
-
-    }
     .fechaid{
         display: flex;
         justify-content: space-around;
     }
-  
+
     .box-info{
-      background-color: #000;
+      background-color: rgb(51, 51, 51);
       color: white;
-      height: 300px;
+      height: 400px;
       width:300px;
       position:absolute;
-      z-index: -2;
-      border-radius:13px;
+      z-index: 1;
+      border-radius:20px !important;
       transition-duration: 1s;
-      padding-top:170px;
+      padding-top:190px;
       display: flex;
       flex-direction: column;
       
     }
     .box-info > h6{
-        
         font-family: 'Helvetica Neue LT Std'!important;
         font-weight: normal !important;
         font-style: normal !important;
-        
-        /* justify-content: center; */
     }
+.box-info-papa{
+  display: flex;
+  /* justify-content: space-around; */
+
+}
+.box-info-hijoO{  
+  display: flex;
+  align-self: center;
+  width: 60%;
+  margin-left: 20px;
+}
+.box-info-hijo{  
+  display: flex;
+  align-self: center;
+  width: 40%;
+  margin: 0.5em;
+}
   .prop{
       color: orange;
   }
@@ -90,4 +94,39 @@ button:hover{
         display: flex;
 
     }
-  
+  .button{
+  color: white;
+  border:0;
+  border-radius: 20px;
+  width:70px;
+  height:30px;
+  background-color:chartreuse;
+  transition: all 0.5s;
+  cursor: wait;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+    
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+    
+.button:hover span {
+  padding-right: 25px;
+}
+    
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -2,8 +2,6 @@ import React from 'react';
 import '../assets/navbar.css';
 
 
-
-
 export default class Example extends React.Component {
     render() {
         return (
@@ -16,15 +14,15 @@ export default class Example extends React.Component {
                             <ul className="navbar-nav" style={{ color: '#000000' }}>
 
                                 <div className="nav-item">
-                                    <li className="nav-link" >HOME</li>
+                                    <button className="nav-link" onClick="" >HOME</button>
                                 </div>
 
                                 <div className="nav-item">
-                                    <li className="nav-link" >ABOUT</li>
+                                    <button className="nav-link" onClick="" >ABOUT</button>
                                 </div>
 
                                 <div className="nav-item">
-                                    <li className="nav-link" >COLLECTIONS</li>
+                                    <button className="nav-link" onClick="" >COLLECTIONS</button>
                                 </div>
 
                             </ul>

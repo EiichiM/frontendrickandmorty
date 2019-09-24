@@ -10,29 +10,43 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-weight: 800 !important;
+}
+b{
+    font-weight: 900;
 }
 .h2{
+    font-weight: 800 !important;
     display: flex;
-    width: 120%;
-    margin-left: -100px;
-    background-color: aqua;
-    justify-content: center;
+    width: 126%;
+    margin-left: -160px;
+    background-color: #36b7b7;
+    justify-content: flex-start;
     
 }
 
 .h2 > h2{
     margin-top: -20px;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
 }
 
 h1{
     display: flex;
     font-family: 'Helvetica Neue LT Std'!important;
-    justify-content: center;
-    margin-left: -300px;
+    font-weight: bold;
+    justify-content: normal;
+    margin-left: -100px;
     padding-bottom: 20px;
 }
 .ram{
-    padding: -100px;
+    display: flex;
+    margin: 3em;
+}
+.ram >h1{
+    font-size: 3.6em;
+    font-weight: 900;
 }
 .morty{
     display: flex;
